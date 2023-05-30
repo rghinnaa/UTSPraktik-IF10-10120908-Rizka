@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Tanggal Pengerjaan : 30/05/2023
+    NIM : 10120908
+    Nama : Rizka Ghinna Auliya
+    Kelas : IF-10-->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivIcon"
+        android:layout_width="@dimen/_60dp"
+        android:layout_height="@dimen/_60dp"
+        android:layout_marginStart="@dimen/_16dp"
+        android:layout_marginBottom="@dimen/_16dp"
+        android:src="@drawable/news"
+        app:layout_constraintBottom_toTopOf="@id/vLine"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvTitle"
+        app:shapeAppearanceOverlay="@style/roundedImage" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvTitle"
+        android:layout_width="@dimen/_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_12dp"
+        android:layout_marginTop="@dimen/_16dp"
+        android:layout_marginEnd="@dimen/_12dp"
+        android:maxLines="2"
+        android:textAppearance="@style/TextAppearance.Roboto.Medium.Body2"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@id/ivChevron"
+        app:layout_constraintStart_toEndOf="@id/ivIcon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvEducation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_12dp"
+        android:layout_marginTop="@dimen/_2dp"
+        android:text="@string/education"
+        android:textAppearance="@style/TextAppearance.Roboto.Medium.Caption"
+        android:textColor="@color/tundora"
+        app:layout_constraintStart_toEndOf="@id/ivIcon"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+    <View
+        android:id="@+id/vCircle"
+        android:layout_width="@dimen/_3dp"
+        android:layout_height="@dimen/_3dp"
+        android:layout_marginStart="@dimen/_4dp"
+        android:background="@drawable/bg_rounded"
+        android:backgroundTint="@color/silver"
+        app:layout_constraintBottom_toBottomOf="@id/tvEducation"
+        app:layout_constraintStart_toEndOf="@id/tvEducation"
+        app:layout_constraintTop_toTopOf="@id/tvEducation" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_4dp"
+        android:layout_marginTop="@dimen/_2dp"
+        android:textAppearance="@style/TextAppearance.Roboto.Regular.Caption"
+        android:textColor="@color/dove_gray"
+        app:layout_constraintStart_toEndOf="@id/vCircle"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+    <ImageView
+        android:id="@+id/ivChevron"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_16dp"
+        android:src="@drawable/ic_chevron_right"
+        app:layout_constraintBottom_toBottomOf="@id/tvDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvTitle" />
+
+    <View
+        android:id="@+id/vLine"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1dp"
+        android:background="@color/wild_sand"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

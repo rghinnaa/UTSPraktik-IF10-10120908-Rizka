@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">UTSPraktik–IF10–10120908-Rizka</string>
+    <string name="timeline_title">Pelaksanaan PPDB Tahap 1 – 2023</string>
+    <string name="detail">Detail</string>
+    <string name="ready">Persiapan</string>
+    <string name="ready_date">17 Mei - 05 Juni 2023</string>
+    <string name="announcement_title">Pengumuman Hasil Seleksi</string>
+    <string name="you_are_accepted">Anda dinyatakan diterima di</string>
+    <string name="high_school">SMA Negeri 1 Bojonggede</string>
+    <string name="performance">Jalur Prestasi Kejuaraan</string>
+    <string name="register_title">Layanan PPDB</string>
+    <string name="city">Kota Bandung</string>
+    <string name="education">Pendidikan</string>
+    <string name="news_title">Berita Terkait PPDB</string>
+    <string name="news_desc">Dapatkan semua informasi terbaru dan terpopuler terkait PPDB</string>
+    <string name="popular">Terpopuler</string>
+    <string name="newest">Terbaru</string>
+    <string name="back_to_top">Kembali ke atas</string>
+    <string name="see_all_news">Lihat semua berita</string>
+</resources>
